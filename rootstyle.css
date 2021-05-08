@@ -1,0 +1,9 @@
+body {
+	background-color:#1A1A1A;
+}
+
+#main {
+  margin-left: 11%; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  color:#808080;
+}
