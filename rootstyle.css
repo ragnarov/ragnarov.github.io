@@ -3,7 +3,23 @@ body {
 }
 
 #main {
-  margin-left: 11%; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-  color:#808080;
+	margin-left: 12%; /* Same as the width of the sidebar */
+	padding: 10px 10px 10px 10px; 
+	color:#808080;
+	top: 0;
+}
+
+#navigation{
+	width: 11%;
+	height: 100%;
+	padding-left: 0.5%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 1px solid #808080;
+}
+
+#navbar_list_1{
+	margin-left: -10%;
+	color: #808080;
 }
