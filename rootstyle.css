@@ -1,11 +1,11 @@
 body {
-	background-color:#1A1A1A;
+	background-color:#121212;
+	color:#d7d7d7;
 }
 
 #main {
 	margin-left: 12%; /* Same as the width of the sidebar */
 	padding: 10px 10px 10px 10px; 
-	color:#808080;
 	top: 0;
 }
 
@@ -16,10 +16,33 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-right: 1px solid #808080;
+	border-right: 1px solid #C1C1C1;
 }
 
-#navbar_list_1{
+.links1:link {
+  color: #508dd4;
+}
+
+/* visited link */
+.links1:visited {
+  color: #7d6a9e;
+}
+
+/* mouse over link */
+.links1:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.links1:active {
+  color: blue;
+}
+
+
+#navsidebar{
 	margin-left: -10%;
-	color: #808080;
+}
+
+.fc_green{
+	color: #A2F6AA;
 }
