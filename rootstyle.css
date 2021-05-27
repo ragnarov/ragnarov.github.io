@@ -1,6 +1,15 @@
+
+/*
+ * $fc_Grey: #808080;
+ * $fc23: #d7d7d7;
+ *
+*/
+
+
+
 body {
-	background-color:#121212;
-	color:#d7d7d7;
+	background-color:#18191a;
+	color: #b0b3b8; /* Font color of the whole page */
 }
 
 #main {
@@ -16,7 +25,8 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-right: 1px solid #C1C1C1;
+	border-right: 1px solid #C1C1C1; /* Border shown on the right of navigation bar */
+	background-color:#161616;
 }
 
 .links1:link {
@@ -44,5 +54,5 @@ body {
 }
 
 .fc_green{
-	color: #A2F6AA;
+	color: #abdeba;
 }
