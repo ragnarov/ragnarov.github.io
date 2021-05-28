@@ -12,6 +12,10 @@ body {
 	color: #b0b3b8; /* Font color of the whole page */
 }
 
+b {
+	color: #e4e6eb;
+}
+
 #main {
 	margin-left: 12%; /* Same as the width of the sidebar */
 	padding: 10px 10px 10px 10px; 
@@ -26,7 +30,7 @@ body {
 	top: 0;
 	left: 0;
 	border-right: 1px solid #C1C1C1; /* Border shown on the right of navigation bar */
-	background-color:#161616;
+	background-color:#161616; /* Propose to change color on mouse hover to #242526 */
 }
 
 .links1:link {
@@ -55,4 +59,8 @@ body {
 
 .fc_green{
 	color: #abdeba;
+}
+
+.caution_red{
+	color: #ff8686
 }

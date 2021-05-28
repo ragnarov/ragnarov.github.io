@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Consensus Theorem</title>
+
+		<!-- [-_-]'s Diary -->
+
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="rootstyle.css">
+		<link rel="stylesheet" href="fixedsys.css"> <!-- This gives the awesome font -->
+	</head>
+	<body>
+		<div class="fixedsys">
+		Redundancy theorem a.k.a Consensus Theorem is a Boolean algebra trick used in Electronics.</br>
+		Conditions :
+		<ol type="I">
+			<li>Expression must have three variables.</li>
+			<li>Each variable is repeated twice.</li>
+			<li>One variable is complemented</li>
+		</ol>
+		Action :
+		Eliminate terms that don't include the complemented variable.</br>
+		Examples :</br>
+
+		<table>
+			<tr><td>Y</td><td>= AB + <span style="text-decoration:overline">A</span>C + BC</td></tr>
+			<tr><td></td><td>= AB + <span style="text-decoration:overline">A</span>C</td></tr>
+		</table>
+
+		Here the term <b>BC</b> was eliminated.
+
+		<table>
+			<tr><td>Y</td><td>= (A+B) . (<span style="text-decoration:overline">A</span>+C) . (B+C)</td></tr>
+			<tr><td></td><td>= (A+B) . (<span style="text-decoration:overline">A</span>+C)</td></tr>
+		</table>
+
+		Here the term <b>(B+C)</b> was eliminated.</br>
+
+		When all the variables are complemented but one is <b>NOT</b> complemented then Eliminate the term that does not contain the <b>NOT Complemented</b> variable.</br>
+		For instance :
+
+		<table>
+			<tr><td>Y</td><td>= <span style="text-decoration:overline">A</span> <span style="text-decoration:overline">B</span> + A<span style="text-decoration:overline">C</span> + <span style="text-decoration:overline">B</span> <span style="text-decoration:overline">C</span></td></tr>
+			<tr><td></td><td>= <span style="text-decoration:overline">A</span> <span style="text-decoration:overline">B</span> + A<span style="text-decoration:overline">C</span></td></tr>
+		</table>
+
+		Here the term <b><span style="text-decoration:overline">B</span> <span style="text-decoration:overline">C</span></b> was eliminated.</br>
+		</div>
+
+
+	</body>
+</html>
