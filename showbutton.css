@@ -3,11 +3,11 @@
 }
 
 .showbuttonclass ~ .showbuttonlabel::before {
-	content: "Show More...";
+	content: "Show More";
 }
 
 .showbuttonclass:checked ~ .showbuttonlabel::before {
-	content: "Show Less...";
+	content: "Show Less";
 }
 
 .showbuttonclass  ~ .showwrapped {
@@ -28,9 +28,14 @@
 
 .showbuttonlabel {
 	cursor: pointer;
-	color: #508dd4;
-	padding: 0 .5em;
+	color: #18191a;
+	padding: 0 .3em;
 	font-size: 80%;
 	border: 1px solid #b0b3b8;
-	border-radius: .25em;
+	border-radius: .125em;
+	background-color: #b0b3b8;
+}
+
+.showbuttonlabel:hover {
+  background-color: #e4e6eb;
 }
