@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Resistor Colour Code</title>
@@ -7,11 +8,9 @@
 		<!-- CSS Files -->
 		<link rel="stylesheet" href="rootstyle.css">
 		<link rel="stylesheet" href="fixedsys.css"> <!-- This gives the awesome font -->
+		<link rel="stylesheet" href="showbutton.css">
 	</head>
 	<body>
-		<div class="fixedsys">
-		THIS PAGE IS <b>NOT</b> COMPLETE.
-		</div>
 		<div id="4_Band_Resistor">
 			<svg	width="349.5"
 				height="150"
@@ -169,7 +168,8 @@
 		<div class="fixedsys">
 			<b>How to read</b> :<br>
 			Read from left to right until decimal multiplier band.<br>
-			Then multiply this number with the decimal multiplier.
+			Then multiply this number with the decimal multiplier.<br>
+			All coded components have at least two value bands and a multiplier. Other bands are optional.
 		</div>
 
 		<div class="fixedsys">
@@ -328,25 +328,22 @@
 				<td align="center">-</td>
 				<td align="center">-</td>
 			</tr>
-		<table>
+		</table>
 		<div class="fixedsys">
 
-		<br><b>Remembering</b> :<br>
+		<br>Remembering :<br>
 		BB-ROY-GB-VGW<br>
 		B.B. ROY of Great Britain was a Very Good Worker.
 
-		<br><br>Trivial Stuff :<br>
-		<ul>
-			<li>All coded components have at least two value bands and a multiplier. Other bands are optional.</li>
-			<li>Resistors with tolerance less than 2% are called "Precision Resistors".</li>
-			<li>Zero ohm resistors are marked with a single black band.</li>
-			<li>Precision resistors may be marked with a five band system,<br>
-			First three bands indicate significant digits, then a power of 10 multiplier, and a tolerance band.</li>
-		</ul>
+		<br><br><b>Precision Resistor</b> :<br>
+		Resistors with tolerance less than 2% are called "Precision Resistors".<br>
+		Precision resistors may be marked with a five band system,<br>
+		First three bands indicate significant digits, then a power of 10 multiplier, and a tolerance band.
 
-		<b>Body Colour</b> :
+		<br><br>Zero ohm resistor :<br>
+		Zero ohm resistors are marked with a single black band.
 
-
+		<br><br>Body Colour :<br>
 		These are not the same as band colours.<br>
 		Sometimes these colours are manufacturer specific.<br>
 		Blue coloured resistors usually mean non-flammable.<br>
@@ -354,14 +351,57 @@
 		White resistors usually mean fusible.
 		<!-- Source : https://electronics.stackexchange.com/questions/5199/what-do-the-colors-of-resistor-bodies-mean#5208 -->
 		
-		<br><br><span class="caution_red">Caution</span> : If these types of resistors are found in circuits
+		<br><br><span class="caution_red">Caution</span> : If these types of resistors are found in circuits, 
 		then do not replace these with normal resistors.
 
-		<br><br>I am writing these as I learn more.<br>
-		I collected these from internet.<br>
-		Some sources are mentioned in HTML source.<br>
-		THIS PAGE IS <b>NOT</b> COMPLETE.
+		<br><br><b>Power &amp; Voltage rating</b> :<br>
+
+		<div>
+			<input type="checkbox" id="showbutton1" class="showbuttonclass">
+			<span class="showwrapped">
+
+				Power rating is the maximum power that a resistor can dissipate before reaching <span class="caution_red">critical failure</span>.<br>
+				Resistors also have a <span class="caution_red">maximum voltage rating</span>. [Never seen myself but here is the <a class="links1" href="https://electronics.stackexchange.com/a/196637">Source</a>]<br>
+				50% 'margin' for both wattage and voltage rating may be considered safe.
+			</span>
+			<span class="showdetails">
+				Power rating is the maximum power that a resistor can dissipate before reaching <span class="caution_red">critical failure</span>.<br>
+				Resistors also have a <span class="caution_red">maximum voltage rating</span>. [Never seen myself but here is the <a class="links1" href="https://electronics.stackexchange.com/a/196637">Source</a>]<br>
+				50% 'margin' for both wattage and voltage rating may be considered safe.<br><br>
+
+				Using resistors in series will distribute voltage across them.<br>
+				How much voltage is dropped across a particular resistor depends on their resistance value.<br>
+				Current flowing across them will be the same.<br>
+				This will reduce power dissipation for each resistor.<br>
+				How much power is dissipated by each resistor depends on their resistance value.<br>
+				Thus resistors rated for a lower voltage than required for a<br>
+				particular purpose might still be used for that purpose.<br><br>
+				
+				Using resistors in parallel will distribute current among them.<br>
+				All of them will get same voltage.<br>
+				This will also reduce power dissipation.<br><br>
+				
+				If all resistors in series or parallel is not same then<br>
+				In series most power will be dissipated by the highest valued resistor.<br>
+				P<sub>1</sub>=I<sup>2</sup>R<sub>1</sub> and P<sub>2</sub>=I<sup>2</sup>R<sub>2</sub><br>
+				If R<sub>1</sub> &gt; R<sub>2</sub><br>
+				Then P<sub>1</sub> &gt; P<sub>2</sub><br><br>
+				
+				On the contrary in parallel combination<br>
+				The lowest valued resistor will dissipate most power.<br>
+				P<sub>1</sub>=<sup>V<sup>2</sup></sup>&frasl;<sub>R<sub>1</sub></sub> and P<sub>2</sub>=<sup>V<sup>2</sup></sup>&frasl;<sub>R<sub>2</sub></sub><br>
+				If R<sub>2</sub> &lt; R<sub>1</sub><br>
+				Then P<sub>2</sub> &gt; P<sub>1</sub>
+			</span>
+			<label for="showbutton1" class="showbuttonlabel links1"></label>
 		</div>
+		
+
+		<br><br>I am writing these as I learn more.<br>
+		I collected some of these from internet.<br>
+		Some sources are mentioned in HTML source code.<br>
+		</div>
+		<a href="view-source:resistor.html" target="_blank" rel="noopener noreferrer" class="links1 fixedsys">View page source</a>
 
 		
 	</body>

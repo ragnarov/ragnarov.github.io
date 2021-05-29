@@ -1,0 +1,36 @@
+.showbuttonclass {
+	display: none;
+}
+
+.showbuttonclass ~ .showbuttonlabel::before {
+	content: "Show More...";
+}
+
+.showbuttonclass:checked ~ .showbuttonlabel::before {
+	content: "Show Less...";
+}
+
+.showbuttonclass  ~ .showwrapped {
+	display: inline;
+}
+
+.showbuttonclass  ~ .showdetails {
+	display: none;
+}
+
+.showbuttonclass:checked  ~ .showwrapped {
+	display: none;
+}
+
+.showbuttonclass:checked  ~ .showdetails {
+	display: inline;
+}
+
+.showbuttonlabel {
+	cursor: pointer;
+	color: #508dd4;
+	padding: 0 .5em;
+	font-size: 80%;
+	border: 1px solid #b0b3b8;
+	border-radius: .25em;
+}
